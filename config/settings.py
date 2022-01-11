@@ -25,14 +25,15 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 
     # Third-party
-    'allauth',
-    'allauth.account',
+    # 'allauth',
+    # 'allauth.account',
     'crispy_forms',
     'debug_toolbar',
 
     # Local
     'accounts',
     'pages',
+    'playground',
 ]
 
 # MIDDLEWARE
@@ -171,3 +172,5 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
